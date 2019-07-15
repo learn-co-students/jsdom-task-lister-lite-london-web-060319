@@ -1,10 +1,10 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-  const newTaskForm = document.getElementById("create-task-form");
-  newTaskForm.addEventListener("submit", addSomeTasks);
+  const createTaskForm = document.getElementById("create-task-form");
+  createTaskForm.addEventListener("submit", addTasks);
 });
 
-function addSomeTasks(event) {
+function addTasks(event) {
   event.preventDefault();
   const newTaskDescription = document.getElementById("new-task-description");
   const tasks = document.getElementById("tasks");
